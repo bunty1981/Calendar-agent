@@ -1,4 +1,4 @@
-name: calendar-agent-env
+name: calendar-agent-env-1
 channels: # list conda channles to use 
   - conda-forge
   - defaults
