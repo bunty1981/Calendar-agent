@@ -1,0 +1,11 @@
+name: calendar-agent-env
+channels: # list conda channles to use 
+  - conda-forge
+  - defaults
+dependencies: # list all package dependencies that can use conda for installation
+  - python=3.12
+  - pip
+  - pip: # list all dependencies that need pip for installation
+    - google-api-python-client 
+    - google-auth-httplib2 
+    - google-auth-oauthlib
