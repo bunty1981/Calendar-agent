@@ -1,9 +1,15 @@
-name: calendar-agent-env-1
-channels: # list conda channles to use 
+name: calendar-agent-env
+channels: # list conda channel to use 
   - conda-forge
   - defaults
 dependencies: # list all package dependencies that can use conda for installation
   - python=3.12
+  - langchain 
+  - langchain-community 
+  - langchain-openai
+  - langchain-anthropic
+  - python-dotenv
+  - pydantic
   - pip
   - pip: # list all dependencies that need pip for installation
     - google-api-python-client 

@@ -32,7 +32,7 @@ else:
 anthropic_api_key = os.getenv("HOME_MAC_ANTHROPIC_API_KEY")
 print(f"Checking that the OPENAI_API_KEY can be loaded & works with the OpenAI API...") 
 print(f"Loaded ANTHROPIC_API_KEY: {'Yes' if anthropic_api_key else 'No'}") # Debug print to confirm key loading
-print(f"ANTHROPIC_API_KEY: {anthropic_api_key[-5:]}...") # Print first 5 characters for verification without exposing full key
+print(f"ANTHROPIC_API_KEY: {anthropic_api_key[-5:]}...") # Print last 5 characters for verification without exposing full key
 
 from anthropic import Anthropic
 anthropic_client = Anthropic(api_key=anthropic_api_key)
