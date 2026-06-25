@@ -18,4 +18,5 @@ dependencies: # list all package dependencies that can use conda for installatio
     # dependencies for the web app
     - fastapi
     - uvicorn
+    - python-multipart
     

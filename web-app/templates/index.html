@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Create Event</title></head>
+<body>
+    <h1>Create Event</h1>
+    <form action="/create_event" method="POST">
+        <label>Summary/Title:</label><input type="text" name="summary" required><br>
+        <label>Description:</label><input type="text" name="description"><br>
+        <label>Start Date:</label><input type="date" name="start_date" required><br>
+        <label>Start Time:</label><input type="time" name="start_time" required><br>
+        <label>End Date:</label><input type="date" name="end_date" required><br>
+        <label>End Time:</label><input type="time" name="end_time" required><br>
+        <button type="submit">Create Event</button>
+    </form>
+</body>
+</html>
+
