@@ -19,4 +19,5 @@ dependencies: # list all package dependencies that can use conda for installatio
     - fastapi
     - uvicorn
     - python-multipart
+    - itsdangerous # required by starlette's SessionMiddleware (webapp/app.py)
     

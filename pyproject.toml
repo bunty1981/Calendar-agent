@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calendar-agent"
+version = "0.1.0"
+description = "Natural-language Google Calendar event creation via a CLI agent and a web app"
+requires-python = ">=3.12"
+dependencies = [
+  "python-dotenv",
+  "pydantic",
+  "google-api-python-client",
+  "google-auth-httplib2",
+  "google-auth-oauthlib",
+  "langchain",
+  "langchain-community",
+  "langchain-openai",
+  "langchain-anthropic",
+  "fastapi",
+  "uvicorn",
+  "python-multipart",
+  "itsdangerous",  # required by starlette's SessionMiddleware (webapp/app.py)
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["core", "cli", "webapp"]

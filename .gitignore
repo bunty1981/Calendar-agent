@@ -2,3 +2,8 @@
 gcp-desktop-client-credentials.json
 gcp-web-client-credentials.json
 token.json
+*.log
+__pycache__/
+.pytest_cache/
+oldproject-structure/
+archives/
