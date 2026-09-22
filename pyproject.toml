@@ -20,11 +20,12 @@ dependencies = [
   "fastapi",
   "uvicorn",
   "python-multipart",
-  "itsdangerous",  # required by starlette's SessionMiddleware (webapp/app.py)
+  "itsdangerous",  # required by starlette's SessionMiddleware (webapp/app.py),
+  "twilio"
 ]
 
 [project.optional-dependencies]
 dev = ["pytest"]
 
 [tool.setuptools]
-packages = ["core", "cli", "webapp"]
+packages = ["core", "cli", "webapp", "sms"]
