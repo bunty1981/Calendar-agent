@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, Helvetica, Arial, sans-serif; max-width: 680px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  footer { margin-top: 3rem; font-size: 0.85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p><em>Last updated: October 28, 2026</em></p>
+
+<p>This SMS calendar-assistant service ("the Service") is a personal project operated by Roshni Bhagalia ("the account owner"). This Privacy Policy explains what information the Service collects from participants and how it is used.</p>
+
+<h2>Who can use this Service</h2>
+<p>The Service has no public sign-up. The account owner personally invites each participant and manually adds their phone number to an allowlist before any messages are processed. Messages from numbers not on the allowlist are not processed.</p>
+
+<h2>What information we collect</h2>
+<ul>
+  <li><strong>Phone number</strong> — collected when the account owner adds a participant to the allowlist, and from each incoming message, to identify the sender.</li>
+  <li><strong>Message content</strong> — the text of messages sent to the Service, used to determine the calendar event being requested.</li>
+  <li><strong>Calendar event records</strong> — created on the account owner's personal Google Calendar as a result of a participant's message, so that a recent event can be identified and removed if the participant replies "UNDO."</li>
+  <li><strong>Basic message metadata</strong> (e.g. a message identifier and timestamp) — used only to avoid processing the same incoming message twice.</li>
+</ul>
+
+<h2>How we use this information</h2>
+<p>Information is used solely to operate the Service: to confirm a sender is allowed to use it, to interpret a message as a calendar event, to create that event on the account owner's Google Calendar via the Google Calendar API, and to support the "UNDO" and duplicate-message-prevention features described above.</p>
+<p>To interpret the natural-language text of a message, the message content is sent to a third-party AI language processing provider (Anthropic) solely for that purpose. It is not used by that provider to train models on by default under Anthropic's standard API terms, and is not used by the Service for any purpose beyond interpreting the message.</p>
+
+<h2>Data sharing</h2>
+<p>We do not sell or share your SMS opt-in data or personal information with third parties for marketing purposes.</p>
+<p>Information is shared only with the service providers necessary to operate the Service (Twilio, for sending and receiving text messages; Google, to create calendar events; and Anthropic, to interpret message text), and is otherwise not shared with anyone else.</p>
+
+<h2>Data storage and retention</h2>
+<p>Allowlist entries, the most recent event created per sender, and recently processed message identifiers are stored in a local database operated by the account owner. A participant may ask the account owner at any time to be removed from the allowlist, at which point their phone number and associated records are deleted.</p>
+
+<h2>Opting out</h2>
+<p>Reply <strong>STOP</strong> to any message from the Service at any time to stop receiving messages. You may also ask the account owner directly to be removed.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or your data can be directed to the account owner through the same channel you were invited by.</p>
+
+<footer>This Service is operated by Roshni Bhagalia, registered with Twilio as a Sole Proprietor A2P 10DLC Brand under the name "Roshni Bhagalia."</footer>
+</body>
+</html>
